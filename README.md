@@ -1,9 +1,6 @@
 
 # 🎩 EX280 practice dump questions
 
-The background color is `#RRGGBB` for light mode and `#000000` for dark mode.
-
-
 ## Question-1:  Configure an identity provider 
 Configure your OpenShift cluster to use an HTPasswd identity provider with the following 
 - The name of the identity provider is: `ex280-htpasswd`
