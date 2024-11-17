@@ -39,8 +39,8 @@ Configure your OpenShift cluster to meet the following requirements:
 - Members of the `pilot` group have view permission in the `apollo` project
 
 ## Question-5: Configure quotas
-Configure your OpenShift cluster to use quotas in the manhattan project with the following require
-The name of the quota is: `ex280-quota`
+Configure your OpenShift cluster to use quotas in the `manhattan` project with the following require
+- The name of the quota is: `ex280-quota`
 - The amount of memory consumed across all containers may not exceed 160Mi.
 - The total amount of CPU consumed across all containers may not exceed 2 full cores.
 - The maximum number of replication controllers does not exceed 3.
