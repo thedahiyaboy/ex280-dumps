@@ -68,13 +68,12 @@ Configure the oxcart application in the `area51` project with the following requ
 - The application is reachable only at the following address: `https://classified.apps.domain28.example.com` The application produces output
 
 
-## Question-9:
-Configure application data
+## Question-9: Configure application data
 Deploy an application using the `openshift/hello-openshift` image that meets the following requirements:
 - The application is part of a project named: `acid`
-The application is named: `phosphoric`
-The application uses a key named `RESPONSE` in a configuration map named `sedicen`
-The application is running and available at `http://phosphoric acid.apps.domain20.example.com` and display 
+- The application is named: `phosphoric`
+- The application uses a key named `RESPONSE` in a configuration map named `sedicen`
+- The application is running and available at `http://phosphoric acid.apps.domain20.example.com` and display 
  `Soda pop won't stop can't stop`
 
 
