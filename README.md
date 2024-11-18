@@ -120,3 +120,59 @@ Configure a network policy using the `database` and `checker` projects with the 
 - The network policy is filtered by project selector using the team devsecops label and pod selector using the `deploymentb-sysql` label
 - The application can establish a connection to port `3306/TCP`
 - You can check your work by examining the logs in the `checker` project.
+
+## Question-17: Configure a project template 
+Configure your OpenShift cluster so that new projects are created with limits using the following requirements 
+- The name of the limit range is: `<PROJECT-NAME>-limits` where `PROJECT NAME` is the name of the project created using ac new-project 
+- The amount of memory consumed by a single container is between `200Mi` and `10Mi` with a default of `50Mi` and a default request of `10Mi`. 
+
+## Question-18: Install operator
+Install the `file-integrity` operator with the following 
+- The operator is installed in the `openshift-integrity` namespace.
+- the approval stratergy is `automatic`.
+- cluster monitoring should be enabled for the `openshift-integrity` project.
+
+## Question-19: Create cronjob
+Create a cron job using the image at `registry.domain20.example.com/library/job-runner:latest` with the following requirements: 
+- The cron job name is `job-runner`
+- The cron job runs at 04:05 on the 2nd day of every month
+- The successful job history limit is `14`
+- The service account and service account name is `magna`
+- The cron job runs in the project called `elementum`
+
+## Question-20: Collect cluster information
+Collect cluster information for Red Hat support Collect the default support information for your OpenShiftcluster with the following requirements: 
+- The data is stored as a compressed tar:archive using tar craf
+- The name of the compressed tar archive is: `ex280-ocp-clusterlatar.gz`, where clusterID is the unique identifier of your Openshift cluster
+- The archive has been uploaded for grading
+- A utility script has been provided for you to upload the archive as follows: `/usr/local/bin/upload-cluster-data-ex280-ocp-clusterID.tar.gz`
+- You may upload the archive as many times as necessary. Each uploaded archive will overwrite any previously uploaded 
+
+
+## Question-21: PVC
+A storage class has been configured to provide NFS storage using information from that storage class, configure a persistent volume with the following requirements:
+- Name: `landing-pv`
+- Access mode: `ReadOnlyMany` 
+- Size: `16Mi`
+- The reclaim policy matches the storage class
+
+Configure a persistent volume claim with the following requirements:
+- Name: `landing-pvc`
+- The size is the same as the persistent volume
+- The access mode is the same as the persistent volume
+
+Deploy the application with the following requirements:
+- The application exists in a project called `page`
+- The application uses a deployment called `landing`
+- The application uses the image hosted at `registry.domain28.example.com/nginxinc/nginx-unprivileged:latest`
+- The nginx mountpoint is `/usr/share/nginx/html`
+- The application uses 3 pods
+- The application is accessible at `https://landing-page.apps.domain20.example.com`
+
+
+## Question-22: Configure a health probe
+An application named `atlas` has been deployed with a single container in the `mercury` project.
+Implement a liveness probe for this container that meets the following requirements:
+- The probe monitors liveness by performing a TCP socket check on port `8080`
+- The probe has an initial delay of 10 seconds and a timeout of 30 seconds
+
