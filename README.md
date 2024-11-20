@@ -77,10 +77,10 @@ Deploy an application using the `openshift/hello-openshift` image that meets the
  `Soda pop won't stop can't stop`
 
 
-## Question-10: Deploy an application with helm
-- Deploy the chart named `redhat-movie` in the project `ascii-movie` from the repository `http://helm.domain20.example.com/chart/`
-- You may use the telnet or ne commands to validate the deployment.
-
+## Question-10: Deploy an application
+Deploy an application a called `rocky` in `bluewills` project
+-	The application should be reachable from the following url: `http://rocky.apps.lab.example.com`
+-	You should get valid Output
 
 ## Queston-11: Configure a secret
 Configure a secret in the math project with the following requirements:
