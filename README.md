@@ -176,3 +176,6 @@ Implement a liveness probe for this container that meets the following requireme
 - The probe monitors liveness by performing a TCP socket check on port `8080`
 - The probe has an initial delay of 10 seconds and a timeout of 30 seconds
 
+## Question-23: Deploy an application with helm
+- Deploy the chart named `redhat-movie` in the project `ascii-movie` from the repository `http://helm.domain20.example.com/chart/`
+- You may use the telnet or ne commands to validate the deployment.
